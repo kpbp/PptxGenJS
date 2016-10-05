@@ -48,6 +48,11 @@ Number.isInteger = Number.isInteger || function(value) {
 };
 
 var PptxGenJS = function(){
+	// IMPORTS
+	var $ = require('jquery');
+	var JSZip = require('jszip');
+	var saveAs = require('file-saver').saveAs;
+	
 	// CONSTS
 	var APP_VER = "1.0.0"; // Used for API versioning
 	var BLD_VER = "20160402"
